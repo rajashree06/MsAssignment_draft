@@ -3,6 +3,6 @@ spring:
     name: apigateway
   profiles:
     active: dev
-  cloud:
-    config:
-      uri: http://localhost:8888
+
+server:
+  port: 9081

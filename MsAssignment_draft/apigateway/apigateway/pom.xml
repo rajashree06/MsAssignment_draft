@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.2.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>2.2.6.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ibm.msbootcamp</groupId>
-	<artifactId>apigateway</artifactId>
+	<groupId>com.ms.boot</groupId>
+	<artifactId>CloudAPIGateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>apigateway</name>
-	<description>apigateway for Spring Boot</description>
+	<name>CloudAPIGateway</name>
+	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
-		<spring-cloud.version>Hoxton.SR6</spring-cloud.version>
+		<spring-cloud.version>Hoxton.SR3</spring-cloud.version>
 	</properties>
 
 	<dependencies>
@@ -24,10 +25,8 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
-		</dependency>
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-web</artifactId> 
+			</dependency> -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-gateway</artifactId>
@@ -36,25 +35,15 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-sleuth-zipkin</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
-		</dependency>
-		
-		<dependency>
-		    <groupId>org.springframework.cloud</groupId>
-		    <artifactId>spring-cloud-sleuth-zipkin</artifactId>
-		</dependency>
-		<dependency>
-		    <groupId>io.micrometer</groupId>
-		    <artifactId>micrometer-core</artifactId>
-		</dependency>
-		<dependency>
-		    <groupId>io.micrometer</groupId>
-		    <artifactId>micrometer-registry-jmx</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

@@ -3,13 +3,13 @@ package com.ibm.msbootcamp.managecurrencyConversionFactor.model;
 public class ConversionFactorRequest {
 	
 	String countryCode;
-	double conversionFactor;
+	double convFactor;
 	double amount;
 	
-	public ConversionFactorRequest(String countryCode, double conversionFactor,double amount) {
+	public ConversionFactorRequest(String countryCode, double convFactor,double amount) {
 		super();
 		this.countryCode = countryCode;
-		this.conversionFactor = conversionFactor;
+		this.convFactor = convFactor;
 		this.amount =amount;
 	}
 	public ConversionFactorRequest() {
@@ -30,10 +30,10 @@ public class ConversionFactorRequest {
 		this.amount = amount;
 	}	
 	public double getConvFactor() {
-		return conversionFactor;
+		return convFactor;
 	}
-	public void setConvFactor(double conversionFactor) {
-		this.conversionFactor = conversionFactor;
+	public void setConvFactor(double convFactor) {
+		this.convFactor = convFactor;
 	}
 	
 	

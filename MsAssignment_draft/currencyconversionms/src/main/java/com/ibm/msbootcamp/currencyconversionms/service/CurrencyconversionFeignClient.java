@@ -10,6 +10,6 @@ import com.ibm.msbootcamp.currencyconversionms.model.ConversionFactorResponse;
 @FeignClient(name = "manageCurrConversionFactorms",fallback = CurrencyconversionFallback.class)
 public interface CurrencyconversionFeignClient {
 
-	@RequestMapping(path = "currencyfactor/conversionFactor", method = RequestMethod.POST)
+	@RequestMapping(path = "/currencyfactor/conversionFactor/", method = RequestMethod.POST)
 	public ConversionFactorResponse getConversionFactor(ConversionFactorRequest request);
 }
